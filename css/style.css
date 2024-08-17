@@ -206,12 +206,31 @@ main section .info:hover {
   background-color: rgb(253, 219, 178);
 }
 main section .info-1 {
+  background-color: lightblue;
   font-size: 40px;
   font-family: "Times New Roman", Times, serif;
   margin: auto;
+  border-radius: 20px;
+  animation: animacion 10s ease-in 2s infinite;
 }
 main section .info-2 {
   font-size: 50px;
+  background-color: lightblue;
+  font-family: "Times New Roman", Times, serif;
+  margin: auto;
+  border-radius: 20px;
+  animation: animacion 10s ease-in 2s infinite;
+}
+@keyframes animacion {
+  0% {
+    width: 100%;
+  }
+  50% {
+    width: 30%;
+  }
+  100% {
+    width: 30%;
+  }
 }
 main section .mis-habilidades {
   margin: auto;
