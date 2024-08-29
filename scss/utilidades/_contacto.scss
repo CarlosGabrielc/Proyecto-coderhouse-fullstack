@@ -1,3 +1,4 @@
+@import "../base/listas";
 /*estilos de contacto */
 main {
     .container-form {
@@ -25,13 +26,13 @@ main {
         text-decoration: none;
         width: 100%;
         margin-bottom: 15px;
-        color: black;
+        color: $color-secundario;
         font-weight: 600;
 
     }
 
     .container-form a i {
-        color: orange;
+        color: nth($listas-colores , 4 );
         margin-right: 10px;
     }
     .container-form form .campo,

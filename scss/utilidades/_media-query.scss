@@ -1,17 +1,69 @@
+@import "../utilidades/variables";
+@import "../base/listas";
 /*estilo tablet */
-@media screen and (min-width: 768px) {}
+@media screen and (max-width: 1020px) {
+/*HEADER */
+header {
+    background-color: $color-secundario;
+    height: 100%;
+ nav {
+    font-size: 20px;
+    flex-direction: column;
+    align-items: center;
+    .nav-link {
+        text-decoration: none;
+        color: $color-principal;
+        margin: 5px 0;
+    }
+}
+}
+.logo img {
+    height: 100px;
+    background-color: $color-secundario;
+}
+
+
+
+
+
+/*FIN HEADER*/
+
+/*main tablet index.html*/
+    .skills{
+        display: flex;
+        text-align: center;
+        text-decoration: none;
+        position: relative;
+    
+    }
+    .p{
+        position: relative;
+        text-align: center;
+        margin-right:300px;
+    }
+    .contenedor-img{
+        display: flex;
+        margin-right: 90px;
+    }
+
+
+
+
+
+    /*fin main tablet index.html*/
+}
 
 /*estilo celular*/
 @media screen and (max-width:479px) {
 
     /*HEADER */
     header {
-        background-color: #000;
+        background-color: $color-secundario;
         height: 100%;
     }
     .logo img {
         height: 35px;
-        background-color: #000;
+        background-color: $color-secundario;
     }
 
     header nav {
@@ -19,7 +71,7 @@
         align-items: center;
         .nav-link {
             text-decoration: none;
-            color: rgb(255, 12, 12);
+            color: $color-principal;
             margin: 5px 0;
         }
     }
@@ -116,7 +168,7 @@
 
     /*INICIO MAIN experiencias.html*/
     .titulo {
-        background-color: #000;
+        background-color: $color-secundario;
         margin: 10px 50px 0px 30px;
         text-align: center;
         font-size: 32px;
@@ -132,7 +184,7 @@
     /*INCIO MAIN educacion.html*/
     .informacion {
         color: chocolate;
-        background-color: #000;
+        background-color: $color-secundario;
         margin-right: 190px;
     }
 
@@ -150,10 +202,10 @@
     .informacion-1 {
         text-align: center;
         margin: 0px 0px 0px 105px;
-        color: black;
+        color: $color-secundario;
         font-size: 150%;
         padding: 0px 100px 0px 45%;
-        background-color: lightcoral;
+        background-color: nth($listas-colores,3);
     }
 
     .informacion-1 {
@@ -165,7 +217,7 @@
         text-align: center;
         font-size: 150%;
         margin: 0px 300px 0px 0px;
-        background-color: lightcoral;
+        background-color: nth($listas-colores , 3 );
         padding: 0px 75px 0px 5%;
     }
 
@@ -174,8 +226,8 @@
     }
 
     .informacion-3 {
-        color: black;
-        background-color: lightcoral;
+        color: $color-secundario;
+        background-color: nth($listas-colores , 3 );
         text-align: center;
         font-size: 30px;
         margin: 0px 0px 0px 10px;
@@ -187,8 +239,8 @@
     }
 
     .informacion-4 {
-        color: black;
-        background-color: lightcoral;
+        color: $color-secundario;
+        background-color: nth($listas-colores , 3 );
         font-size: 35px;
         margin: 0px 340px 0px 0px;
         padding: 0px 85px 0px 10%;

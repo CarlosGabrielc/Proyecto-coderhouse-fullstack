@@ -1,8 +1,9 @@
+@import "../base/listas";
 /*estilos sobre mi */
 main section {
     .info {
         margin: 10px auto;
-        width: 90%;
+        font-size: 40px;
         background-color: bisque;
         border-radius: 50px;
 
@@ -13,7 +14,7 @@ main section {
     }
 
     .info-1 {
-        background-color: lightblue;
+        background-color: nth($listas-colores , 6) ;
         font-size: 40px;
         font-family: 'Times New Roman', Times, serif;
         margin: auto;
@@ -25,7 +26,7 @@ main section {
 
     .info-2 {
         font-size: 50px;
-        background-color: lightblue;
+        background-color:nth($listas-colores , 6) ;
         font-family: 'Times New Roman', Times, serif;
         margin: auto;
         border-radius:20px;
@@ -49,10 +50,10 @@ main section {
     }
 
     .mis-habilidades {
-        margin: auto;
-        width: 90%;
+        margin: 15px auto ;
+        font-size: 40px;
+        background-color: bisque;
         border-radius: 50px;
-        padding-bottom: 20px;
     }
 
     .iconos {
